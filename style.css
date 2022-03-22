@@ -280,8 +280,8 @@ button {
 
 /*=============== MODAL ===============*/
 .container-modal {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
 }
 
 .modal {
@@ -289,7 +289,14 @@ button {
     display: grid;
     place-items: center;
 }
-
+.modal__button__main{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0);
+    color: #FFF;
+    /* padding: 1rem 1.25rem; */
+    /* border-radius: .5rem; */
+    transition: .3s;
+}
 .modal__button {
     display: inline-block;
     background-color: var(--first-color);
@@ -304,7 +311,7 @@ button {
 }
 
 .modal__container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: hsla(var(--hue), 18%, 75%, .8);
