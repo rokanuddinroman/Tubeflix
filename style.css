@@ -446,7 +446,7 @@ transform-origin: 50% 100%; */
     margin: 0;
     padding-top: 140%;
 } */
-.card-wrapper-outer{
+/* .card-wrapper-outer{
     width: 100%;
 }
 .card-wrapper{
@@ -455,7 +455,7 @@ transform-origin: 50% 100%; */
     width: 1300px;
     left: 0px;
     display: block;
-}
+} */
 .grid-container{
     overflow-y: hidden;
     overflow-x: scroll;
@@ -477,7 +477,7 @@ transform-origin: 50% 100%; */
     position: relative;
     float: left;
     width: 100%;
-    /* min-width: 150px; */
+    min-width: 150px;
     height: 100%;
     padding-bottom: 140%;
     overflow: hidden;
