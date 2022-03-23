@@ -466,6 +466,7 @@ transform-origin: 50% 100%; */
 }
 .snaps-inline > *{
     scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 .grid-container::-webkit-scrollbar {
     display: none;
