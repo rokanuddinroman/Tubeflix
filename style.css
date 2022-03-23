@@ -448,7 +448,6 @@ transform-origin: 50% 100%; */
     padding: 0px;
     border-radius: 3px;
     transition: transform 450ms; 
-    scroll-snap-stop: always;
 }
 .card > img{
     inline-size: 100%;
@@ -467,6 +466,9 @@ transform-origin: 50% 100%; */
 .snaps-inline > *{
     scroll-snap-align: start;
     scroll-snap-stop: normal;
+}
+.scroll-stop{
+    scroll-snap-stop: always;
 }
 .grid-container::-webkit-scrollbar {
     display: none;
