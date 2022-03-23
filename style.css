@@ -78,10 +78,11 @@ img{
 }
 
 .section__title{
-    font-size: var(--h1-font-size);
     color: var(--title-color);
-    text-align: center;
-    margin-bottom: 1.5rem;
+    text-align: left;
+    margin-bottom: 0.6rem;
+    padding-left: 10px;
+    border-left: 4px solid aquamarine;
 }
 
 .section__height{
@@ -457,24 +458,34 @@ transform-origin: 50% 100%; */
     display: block;
 } */
 .grid-container{
-    overflow-y: hidden;
+    display: grid;
+    gap: 5px;
+    grid-auto-flow: column;
+    grid-auto-columns: 16.666667%;
+
+    padding: 0 5px 5px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    /* overflow-y: hidden;
     overflow-x: scroll;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-gap: .5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: .5rem; */
 }
-.flex-container{
-    overflow-y: hidden;
-    overflow-x: scroll;
-    width: 100%;
-    display: flex;
+@media screen and (max-width:600px) {
+    .grid-container{
+        grid-auto-columns: 32%;
+    }
 }
-.grid-container::-webkit-scrollbar {
-    display: none;
-  }
 .card{
-    position: relative;
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 3px;
+    padding: 5px;
+    background: rgb(184, 184, 184);
+    border-radius: 3px;
+    /* position: relative;
     float: left;
     width: 100%;
     min-width: 150px;
@@ -483,7 +494,36 @@ transform-origin: 50% 100%; */
     overflow: hidden;
     border-radius: 8px;
     background-color: aquamarine;
-    transition: transform 450ms;
+    transition: transform 450ms; */
+}
+.card > img{
+    inline-size: 100%;
+    aspect-ratio: 11 / 15.4;
+    object-fit: cover;
+}
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: ;
+}
+.snap-inline > * {
+    scroll-snap-align: start;
+}
+
+
+.grid-container::-webkit-scrollbar {
+    display: none;
+  }
+.card{
+    /* position: relative;
+    float: left;
+    width: 100%;
+    min-width: 150px;
+    height: 100%;
+    padding-bottom: 140%;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: aquamarine;
+    transition: transform 450ms; */
 }
 
 
