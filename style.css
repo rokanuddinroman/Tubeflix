@@ -82,7 +82,7 @@ img{
     font-size: 20px;
     font-weight: 600;
     text-align: left;
-    margin-bottom: 0.6rem;
+    margin-bottom: 1rem;
     padding-left: 10px;
     border-left: 4px solid aquamarine;
 }
@@ -448,6 +448,7 @@ transform-origin: 50% 100%; */
     padding: 0px;
     border-radius: 3px;
     transition: transform 450ms; 
+    scroll-snap-stop: always;
 }
 .card > img{
     inline-size: 100%;
@@ -462,11 +463,10 @@ transform-origin: 50% 100%; */
 .snaps-inline{
     scroll-snap-type: inline mandatory;
     scroll-padding-inline: 0px;
-    scroll-snap-stop: always;
 }
 .snaps-inline > *{
     scroll-snap-align: start;
-    scroll-snap-stop: always;
+    scroll-snap-stop: normal;
 }
 .grid-container::-webkit-scrollbar {
     display: none;
