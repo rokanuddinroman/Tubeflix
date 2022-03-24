@@ -479,7 +479,7 @@ button {
 }
 .snaps-inline{
     scroll-snap-type: inline mandatory;
-    scroll-padding-inline: 200px;
+    scroll-padding-inline: 0px;
 }
 .snaps-inline > *{
     scroll-snap-align: start;
@@ -504,7 +504,7 @@ button {
     font-size: 25px;
     padding: 1px 3px 0px 3px;
     /* border: 1px solid rgba(136,136,136,.3); */
-    background-color: rgba(221, 221, 221, 0.3);;
+    background-color: rgba(221, 221, 221, 0.4);;
     color: black;
     border-radius: 4px;
     margin-right: 5px;
