@@ -1,4 +1,4 @@
-let span = document.getElementsByTagName('span');
+let span = document.querySelectorAll('.control');
 let product = document.getElementsByClassName('card')
 let product_page = Math.ceil(product.length / 6);
 let l = 0;
@@ -7,7 +7,7 @@ let maxMove = 800;
 // mobile_view	
 let mob_view = window.matchMedia("(max-width: 768px)");
 if (mob_view.matches) {
-	movePer = 50.36;
+	movePer = 100;
 	maxMove = 504;
 }
 

@@ -1,14 +1,14 @@
-let span = document.getElementsByTagName('span');
-let product = document.getElementsByClassName('card');
+let span = document.querySelectorAll('.control');
+let product = document.getElementsByClassName('featured-card');
 let product_page = Math.ceil(product.length / 6);
 let l = 0;
-let movePer = 100;
-let maxMove = 800;
+let movePer = 103;
+let maxMove = 206;
 // mobile_view	
 let mob_view = window.matchMedia("(max-width: 768px)");
 if (mob_view.matches) {
-    movePer = 50.36;
-    maxMove = 504;
+    movePer = 103;
+    maxMove = 700;
 }
 
 let right_mover = () => {
